@@ -16,8 +16,33 @@ public class Kata3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        HistogramDisplay histo = new HistogramDisplay();
-        histo.execute();
+        Histogram<String> histogram = new Histogram<String>();
+        histogram.increment("gmail.com");
+        histogram.increment("gmail.com"); 
+        histogram.increment("gmail.com"); 
+        histogram.increment("gmail.com"); 
+        histogram.increment("gmail.com"); 
+        histogram.increment("gmail.com"); 
+        histogram.increment("hotmail.com");
+        histogram.increment("hotmail.com");
+        histogram.increment("hotmail.com");
+        histogram.increment("ulpgc.es");
+        histogram.increment("ulpgc.es");
+        histogram.increment("ulpgc.es");
+        histogram.increment("ulpgc.es");
+        histogram.increment("ulpgc.es");
+        histogram.increment("ulpgc.es");
+        histogram.increment("ulpgc.es");
+        histogram.increment("ulpgc.es");
+        histogram.increment("ulpgc.es");
+        histogram.increment("ulpgc.es");
+        histogram.increment("icloud.es");
+        histogram.increment("icloud.es");
+        histogram.increment("icloud.es");
+        histogram.increment("icloud.es");
+        
+        
+        new HistogramDisplay("JFreeChart Histogram", histogram).execute();
     }
     
 }
